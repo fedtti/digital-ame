@@ -1,6 +1,6 @@
 $(document).ready(function() {
   /**
-   * Progress
+   * Header → Progress
    */
   $(window).on("scroll", function() {
     var scrollTop = $(window).scrollTop(),
