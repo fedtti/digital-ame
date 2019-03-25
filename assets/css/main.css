@@ -16,6 +16,11 @@ body {
  */
 header {
   background: #404c51;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
 
 progress {
@@ -42,6 +47,10 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background: #7ab700;
   border-radius: 0.3125rem 0 0 0.3125rem;
+}
+
+progress[value="100"]::-webkit-progress-value {
+  border-radius: 0.3125rem;
 }
 
 /**
@@ -239,7 +248,7 @@ input[type="checkbox"]:checked::after {
    * Main
    */
    main {
-     padding: 0 0 3.125rem 0;
+     padding: 3.375rem 0 3.125rem 0;
    }
 
    form {
@@ -294,7 +303,7 @@ input[type="checkbox"]:checked::after {
    * Main
    */
   main {
-    padding: 0 0 4.25rem 0;
+    padding: 4.375rem 0 4.25rem 0;
   }
 
   form {
