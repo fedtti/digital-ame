@@ -162,6 +162,8 @@ input[type="checkbox"]:checked::after {
 }
 
 .navbar__item:focus > .navbar__link, .navbar__item:hover > .navbar__link {
+  padding-bottom: 0.625rem;
+  top: -0.625rem;
   border-bottom-width: 0;
 }
 
