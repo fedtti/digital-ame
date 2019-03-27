@@ -162,15 +162,31 @@ input[type="checkbox"]:checked::after {
 }
 
 .navbar__item:focus > .navbar__link, .navbar__item:hover > .navbar__link {
-  border: 0;
+  border-bottom-width: 0;
 }
 
 .navbar__link {
-  border-bottom: 0.0625rem solid #fff;
+  border-bottom: 0.125rem solid #fff;
   color: #fff;
   cursor: default;
   font-size: 3.438rem;
+  position: relative;
   text-decoration: none;
+}
+
+.navbar__link::after {
+    background: #fff;
+    bottom: -0.125rem;
+    content: '';
+    width: 0;
+    height: 0.125rem;
+    left: 0;
+    position: absolute;
+    transition: width 0.5s ease-in-out;
+}
+
+.navbar__item:hover > .navbar__link::after {
+    width: 100%;
 }
 
 /**
