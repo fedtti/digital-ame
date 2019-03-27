@@ -15,9 +15,10 @@ $(document).ready(function() {
    * Swiper v4.5.0
    */
   var swiper = new Swiper (".swiper-container", {
-    centeredSlides: true,
     speed: 500,
     spaceBetween: 20,
+    slidesPerView: "auto",
+    freeMode: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true
